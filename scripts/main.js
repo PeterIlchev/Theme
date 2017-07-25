@@ -1,12 +1,10 @@
-
 //******* SLICKSLIDER *******
 
 $(document).ready(function(){
-  $('.slicker').slick({
+  $('.slider').slick({
     centerMode: true,
     variableWidth: true,
     draggable: false
-
   });
 });
 			

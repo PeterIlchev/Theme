@@ -6,13 +6,6 @@
 
 }
 
-
-
-.clear {
-    clear: both;
-}
-
-
 div.backcontact{
 	height: 35px;
 	padding-top: 8px;	
@@ -48,14 +41,12 @@ div.backcontact{
 			margin-top: -3px;
 			padding-right: 30px;
 			padding-left: 10px;
-			transition: width 31s ease-out;
+			transition: width 0.1s ease-out;
 			}
 				.search:focus {
 				width: 350px;
 				}
-			
 		}
-
 }
 
 
@@ -63,8 +54,10 @@ div.backcontact{
 
 div.backmenu {
 	background-color: #222222;
-	height: 93px;
+	height: 90px;
 	border-bottom: 2px solid #7c9c37;
+	width: 100%;
+	z-index: 3;
 		div.menuwidth {
 		width: 1000px;
 		margin: 0px auto;
@@ -76,6 +69,7 @@ div.backmenu {
 			ul.menu {
 			color: #ffffff;
 			float: right;
+			padding-right: 10px;
 				li {
 				font-size: 12px;
 				text-transform: uppercase;
@@ -105,7 +99,7 @@ div.backmenu {
 		}	
 }
 
-.slicker {
+.slider {
 	max-width: 1000px;
 	margin:	0px auto;
 		.slick-prev {
@@ -119,50 +113,6 @@ div.backmenu {
 		   color: #000;
 		}
 }
-
-
-/*
-
-.circle {
-  display: inline-block;
-  transform-origin: center center;
-  position: absolute;
- transform: translate(50px, 50px)
-   }
-
-
-@keyframes shake-hard {
-  2% {
-    transform: translate(3px, -1px) rotate(-0.5deg); }
-  4% {
-    transform: translate(0px, -8px) rotate(-0.5deg); }
- 
-  12% {
-    transform: translate(5px, 2px) rotate(-1.5deg); }
-  14% {
-    transform: translate(-2px, 6px) rotate(0.5deg); }
-  16% {
-    transform: translate(4px, 5px) rotate(0.5deg); }
-  80% {
-    transform: translate(-8px, 3px) rotate(3.5deg); }
-  82% {
-    transform: translate(3px, -2px) rotate(2.5deg); }
-
-  94% {
-    transform: translate(-6px, -7px) rotate(2.5deg); }
-  96% {
-    transform: translate(-6px, 5px) rotate(0.5deg); }
-  98% {
-    transform: translate(5px, -7px) rotate(0.5deg); }
-  0%, 100% {
-    transform: translate(0, 0) rotate(0); } }
-
-.circle:hover,
-.shake-trigger:hover .shake-hard, .shake-hard.shake-freeze, .shake-hard.shake-constant {
-  animation-name: shake-hard;
-  animation-duration: 100ms;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; }*/
 
 div.quotes {
 	max-width: 1000px;
@@ -252,7 +202,6 @@ div.halfWindowOne {
 			color: #7c9c37;
 			text-decoration: none;
 			float: right;
-			
 			}
 			
 		}
@@ -261,6 +210,7 @@ div.halfWindowOne {
 div.halfWindowTwo {
 max-width: 1000px;
 margin: 0px auto;
+text-align: center;
 	img {
 	margin-bottom: 20px;
 	}
@@ -291,43 +241,29 @@ margin: 0px auto;
 			}
 		}
 	}
-
 	ul {	
 		li {
 		list-style-type: none;
 			img.profilePic {
 			padding-left: 10px;
 			float: left;
-			 &span a {
-			 margin-left: 10px;
-			 }
+			position: relative;
 			}
 			img.profileTwo {
-			margin-left: 20px;
+			display: inline-block;
 			}
 		}
 	}
 }
 
-div.nameProfile {
-	width: 1000px;
-		ul {
-			list-style-type: none;
-			li.nameProfileFirst {
-			margin-left: 10px;
-			display: inline-block;
-			float: left;
-			}
-			li.nameProfileSecond {
-			}
 
-		}
-}
+
 
 div.footer {
 	background-color: #222222;
 	height: 330px;
 	margin-top: 50px;
+	border-bottom: 1px solid #000000;
 		div.footerul {
 			width: 1000px;
 			margin: 0px auto;
@@ -361,7 +297,6 @@ div.footer {
 					color: #7c9c37;
 					}
 				}
-
 				li.secondliFooter {
 				width: 250px;
 				float: left;
@@ -401,7 +336,6 @@ div.footer {
 							}
 						}
 				}
-
 				li.thirdliFooter {
 				width: 250px;
 				float: left;
@@ -436,11 +370,11 @@ div.footer {
 					margin-top: 25px;
 					}
 				}
-
 				li.fourthliFooter {
 				width: 250px;
 				float: left;
 				list-style-type: none;
+				padding-left: 5px;
 					h4 {
 					font-size: 12px;
 					text-transform: uppercase;
@@ -457,7 +391,7 @@ div.footer {
 					}
 					input {
 					padding: 10px;
-					padding-right: 60px;
+					padding-right: 55px;
 					background-color: #353535;
 					border-radius: 5px;
 					border: none;
@@ -473,9 +407,20 @@ div.footer {
 					padding: 5px;
 					text-transform: uppercase;
 					}
-
 				}
 
 			}
+		}
+}
+
+div.copyright {
+	height: 60px;
+	background-color: #222222;
+	border-top: 1px solid #3a3a3a;
+	text-align: center;
+	padding-top: 15px;
+		span {
+			font-size: 12px;
+			color: #666666;
 		}
 }
